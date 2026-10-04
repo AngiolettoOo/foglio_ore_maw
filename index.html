@@ -399,12 +399,16 @@
         @page {
             size: A4 portrait;
             margin: 5mm 5mm;
+           
         }
 
         @media print {
             * {
                 -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
+                -webkit-box-flex: auto;
+                margin-bottom: auto;
+                margin-top: auto;
+
             }
 
             html, body {
@@ -442,7 +446,7 @@
             }
 
             .maw-logo {
-                height: 32px !important;
+                height: 40px !important;
             }
 
             .control-item label {
@@ -617,7 +621,7 @@
             </div>
             <div class="field-row">
                 <label>Sede Legale:</label>
-                <input type="text" value="CORMONS (GO), VIA ALESSANDRO VOLTA 9" readonly>
+                <input type="text" value="CORMONS (GO), VIA ALESSANDRO VOLTA 9, CAP 34071" readonly>
             </div>
             <div class="field-row">
                 <label>Sede Lavori:</label>
@@ -698,12 +702,12 @@
     <!-- Firme Ancorate sul fondo -->
     <div class="signatures">
         <div class="sig-box">
-            <p>Data: <input type="date" id="currentDate" style="padding: 1px 4px; text-align: center; font-family: inherit;"></p>
+            <p>Data: <input type="date" id="currentDate" style="padding: 1px 4px; margin-bottom: auto; text-align: center; font-family: inherit;"></p>
             <div class="sig-line"></div>
             <p style="font-weight: bold;">Firma del Lavoratore</p>
         </div>
         <div class="sig-box">
-            <p style="font-size: 10px; margin-bottom: 2px;">Certifico che il lavoratore ha effettivamente prestato il suo servizio per le ore sopra indicate</p>
+            <p style="font-size: auto; margin-bottom: auto;">Certifico che il lavoratore ha effettivamente prestato il suo servizio per le ore sopra indicate</p>
             <div class="sig-line"></div>
             <p style="font-weight: bold;">Timbro e Firma Utilizzatore</p>
         </div>
